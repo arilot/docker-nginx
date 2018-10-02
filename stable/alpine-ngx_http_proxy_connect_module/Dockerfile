@@ -9,6 +9,7 @@ ADD https://raw.githubusercontent.com/chobits/ngx_http_proxy_connect_module/mast
 
 RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 	&& CONFIG="\
+		--with-debug \
                 --add-module=/usr/src/ngx_http_proxy_connect_module \
 		--prefix=/etc/nginx \
 		--sbin-path=/usr/sbin/nginx \
